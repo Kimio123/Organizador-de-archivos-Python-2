@@ -71,7 +71,8 @@ def organizar_archivos(ruta_directorio):
     print(f"\n¡Organización completada! Se movieron {archivos_movidos} archivos.")
 
 if __name__ == "__main__":
-    ruta_a_organizar = r"C:\Users\valen\OneDrive\Desktop\Mis proyectos\prueba" 
+    # Dejamos la ruta vacía para que el script pregunte al usuario cuál quiere organizar
+    ruta_a_organizar = input("Introduce la ruta de la carpeta que quieres organizar: ")
     
-    print("Iniciando el script organizador...")
+    print(f"Iniciando el script organizador en: {ruta_a_organizar}")
     organizar_archivos(ruta_a_organizar)
